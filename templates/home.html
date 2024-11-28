@@ -12,6 +12,12 @@
         <span> name:{{name}}</span>
         <span>id:{{id}}</span>
    </span>
+   <h3>Languages:</h3>
+   <ul>
+    {% for lang in lang %}
+        <li>{{lang}}</li>
+    {% endfor %}
+   </ul>
     <button onclick="handleclick()">click me</button>
 </body>
 <script src="{{url_for('static',filename='js/script.js')}}"></script>
