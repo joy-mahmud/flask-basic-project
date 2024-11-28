@@ -8,5 +8,11 @@
 </head>
 <body>
     <h2>home page template</h2>
+   <span class='name'>
+        <span> name:{{name}}</span>
+        <span>id:{{id}}</span>
+   </span>
+    <button onclick="handleclick()">click me</button>
 </body>
+<script src="{{url_for('static',filename='js/script.js')}}"></script>
 </html>
